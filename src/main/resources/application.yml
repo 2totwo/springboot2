@@ -18,3 +18,7 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: 'true'
+    open-in-view: false
+    # Open Sessino in View(OSIV) : 기본은 true로 생략되어 있음
+    # Lazy Loading일 때 OSIV가 true이면 N+1 문제가 발생할 수 있다.
+    # false 설정 시 LazyInitializationException 발생함.
