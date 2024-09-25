@@ -12,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 // @Entity Data ---(변환작업)---> DTO
-public class BookDTO {
+public class BookDTO { // 응답용, 요청용(BookPayloadDTO)
     private Long id;
     private String title;
     private int price;
